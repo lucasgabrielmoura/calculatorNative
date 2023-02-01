@@ -1,9 +1,15 @@
+import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Button from './src/components/Button';
+import Display from './src/components/Display';
 
 export default function App() {
+
+  const [displayValor, setDisplayValor] = useState("0");
+
   return (
     <View style={styles.container}>
+      <Display valor={displayValor}></Display>
       <View style={styles.buttons}>
         <Button label='AC'></Button>
         <Button label='/'></Button>
