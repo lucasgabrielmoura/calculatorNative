@@ -24,7 +24,7 @@ export default function App() {
     setDisplayValor(displayValorV)
 
     if(n !== "."){
-      const newValue = parseFloat(displayValorV)
+      const newValue = displayValorV
       const valuesV = [...values]
       valuesV[current] = newValue;
       setValues( valuesV )
